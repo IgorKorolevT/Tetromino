@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+body {
+   background: 
+   linear-gradient(90deg, rgb(0, 242, 255), rgb(79, 0, 128));
+   height: 100vh;
+   display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.grid {
+    background: rgb(5, 5, 55);
+    padding: 0.5vh;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    gap: 0.5vh;
+    
+}
+
+.grid > div{
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background-color: rgba(214, 171, 171, 0.201);
+    border-radius: 0.3vh;
+}
+
+.grid .O{
+    background-color: rgb(237, 233, 22);
+}
+.grid .J{
+    background-color: rgb(20, 13, 150);
+}
+.grid .L{
+    background-color: rgb(220, 134, 5);
+}
+.grid .I{
+    background-color: rgb(131, 203, 236);
+}
+.grid .S{
+    background-color: rgb(27, 205, 33);
+}
+.grid .T{
+    background-color: rgb(169, 12, 140);
+}
+.grid .Z{
+    background-color: rgb(222, 0, 0);
+}
+.scoreDiv{
+    display: flex;
+    width: 25vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.scoreDiv > p{
+    font-size: 3.5vh;
+    color: #90ff00;
+}
+
